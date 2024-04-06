@@ -4,6 +4,7 @@ Available on: https://python-words-api.azurewebsites.net/
 
 Description:
 Words is a Python API that has the functionalities do count vowel number on word array, and also sort words by the direction desired.
+It's available under a Azure Web App service
 
 Features:
 
