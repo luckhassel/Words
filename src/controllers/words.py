@@ -1,6 +1,6 @@
 from flask import Blueprint
 
-words_controller = Blueprint('word', __name__)
+words_controller = Blueprint('words_controller', __name__)
 
 @words_controller.route('/', methods=["GET"])
 def words_health_check():
