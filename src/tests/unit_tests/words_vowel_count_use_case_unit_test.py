@@ -2,7 +2,6 @@ import unittest
 from use_cases.words_vowel_count_use_case import WordsVowelCountUseCase
 from container import Container
 
-
 class TestWordsVowelCountUseCase(unittest.TestCase):
     _container = None
     
