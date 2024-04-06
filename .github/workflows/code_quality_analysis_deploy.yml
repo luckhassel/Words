@@ -1,9 +1,5 @@
 name: Code Quality Analysis and Deploy
 
-defaults:
-  run:
-    working-directory: ./src
-
 env:
   AZURE_WEBAPP_NAME: python-words-api   # set this to your application's name
   PYTHON_VERSION: '3.10'               # set this to the Python version to use
@@ -51,7 +47,7 @@ jobs:
 
     - name: Analysing the code with pylint
       run: |
-        pylint $(git ls-files '*.py')
+        pylint $(git ls-files '*.py') 
 
     - name: Executing unit tests
       run: |
