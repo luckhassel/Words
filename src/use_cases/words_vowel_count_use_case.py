@@ -1,6 +1,6 @@
 '''Use case for counting vowels on each word'''
 
-class WordsVowelCountUseCase:
+class WordsVowelCountUseCase: # pylint: disable=too-few-public-methods
     '''Use case for counting vowels on each word'''
     def __init__(self, words: list[str]):
         self.words = words
@@ -13,7 +13,7 @@ class WordsVowelCountUseCase:
             return result
 
         for i in enumerate(self.words):
-            word_lower = self.words[i].lower()
-            result[self.words[i]] = len([c for c in word_lower if c in 'aeiou'])
+            word_lower = self.words[i[0]].lower()
+            result[self.words[i[0]]] = len([c for c in word_lower if c in 'aeiou'])
 
         return result

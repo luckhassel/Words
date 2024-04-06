@@ -1,6 +1,6 @@
 '''Use case for sorting words'''
 
-class WordsSortUseCase:
+class WordsSortUseCase: # pylint: disable=too-few-public-methods
     '''Use case for sorting words'''
     def __init__(self, words: list[str], order: str):
         self.words = words
